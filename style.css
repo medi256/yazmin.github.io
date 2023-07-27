@@ -1,0 +1,31 @@
+body{
+    background-color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', ;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: slateblue;
+
+}
+h1:hover{
+    text-shadow: 3px 3px 5px white;
+}
+textarea{
+    text-align: center;
+    color: blue;
+    padding: 20px;
+    margin: 10px;
+}
+button{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    color: red;
+}
+h4{
+    color: blue;
+}
+div{
+    text-align: center;
+}
