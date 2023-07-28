@@ -1,2 +1,2 @@
-# yazmin.github.io
-DOM manipulation by a junior developer
+# Yazmin
+Simple DOM manipulation web application.
