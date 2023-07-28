@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>The only Yazmin &lt;3</h1>
-    <div>
-    <textarea id="text" placeholder="Write any message to yazmin" rows="20" cols="35"></textarea>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yazmin</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="https://img.freepik.com/free-vector/botanical-capital-letter-y-vector_53876-170292.jpg"
+      type="image/x-icon"
+    />
+
+    <!-- Linking stylesheet -->
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Yazmin ❤️</h1>
+      <div>
+        <textarea
+          id="text"
+          placeholder="Write a message to see the output..."
+          rows="20"
+          cols="35"
+        ></textarea>
+      </div>
+      <button onclick="outPrintMsg()">View output</button>
+      <p id="output-container"></p>
     </div>
-    <button onclick="yazmin()">Press and Send a message to Yazmin</button>
-    <h4 id="lito">Hello everyone</h4>
-    <script src="javascript.js"></script>
-</body>
+
+    <footer>
+      &#x00A9;2023. Built by
+      <a href="https://github.com/medi256" target="_blank">Medi256</a>
+      &
+      <a href="https://www.sandilendimande.com/" target="_blank"
+        >Sandile Dev01</a
+      >
+    </footer>
+  </body>
+  <script src="script/script.js" defer></script>
 </html>

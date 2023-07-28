@@ -1,0 +1,142 @@
+/* Setting up for responsiveness */
+
+*,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* variables */
+
+:root {
+  --half-rem: 0.5rem;
+  --rem: 1rem;
+  --space: 6rem;
+
+  --primary-clr: #bffcf9;
+  --secondary-clr: #fff3fa;
+  --accent-clr: #00c9c8;
+
+  --primary-font: "Lato", sans-serif;
+  --secondary-font: "Lato", sans-serif;
+
+  --transition: all 250ms ease-in-out;
+}
+
+@media (min-width: 0) {
+  body {
+    background: url("https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100%;
+    position: relative;
+  }
+
+  .main-container {
+    padding: var(--rem);
+    background-color: #00000095;
+    border-radius: 2px;
+    backdrop-filter: blur(5px);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+    color: var(--primary-clr);
+    font-family: var(--primary-font);
+    padding-bottom: var(--half-rem);
+  }
+
+  textarea {
+    width: 75dvw;
+    font-family: var(--primary-font);
+    resize: none;
+    padding: var(--half-rem);
+    outline: none;
+    font-size: var(--rem);
+    border-radius: 2px;
+  }
+
+  /* button styles */
+  button {
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: var(--accent-clr);
+    color: black;
+    font-family: var(--primary-font);
+    font-size: var(--rem);
+    border: none;
+    padding: var(--rem);
+
+    width: 75dvw;
+    transition: var(--transition);
+  }
+
+  button:hover {
+    background-color: var(--primary-clr);
+  }
+
+  /* output styles */
+
+  #output-container {
+    padding: var(--half-rem);
+  }
+
+  p {
+    font-family: var(--secondary-font);
+    color: var(--secondary-clr);
+  }
+
+  /* Footer */
+
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-family: var(--secondary-font);
+    background-color: #000000f8;
+    padding: var(--half-rem);
+    color: var(--secondary-clr);
+    border-top-right-radius: 2px;
+  }
+
+  footer a {
+    color: var(--accent-clr);
+    transition: var(--transition);
+  }
+
+  footer a:hover {
+    filter: invert(2);
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 60%;
+  }
+
+  textarea,
+  button {
+    width: 50dvw;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 50%;
+  }
+
+  textarea,
+  button {
+    width: 40dvw;
+  }
+}
