@@ -17,6 +17,7 @@ html {
   --primary-clr: #bffcf9;
   --secondary-clr: #fff3fa;
   --accent-clr: #00c9c8;
+  --grey: #5d5a5a;
 
   --primary-font: "Lato", sans-serif;
   --secondary-font: "Lato", sans-serif;
@@ -70,8 +71,8 @@ html {
   button {
     border-radius: 2px;
     cursor: pointer;
-    background-color: var(--accent-clr);
-    color: black;
+    background-color: var(--grey);
+    color: #808080;
     font-family: var(--primary-font);
     font-size: var(--rem);
     border: none;
@@ -81,9 +82,9 @@ html {
     transition: var(--transition);
   }
 
-  button:hover {
+  /* button:hover {
     background-color: var(--primary-clr);
-  }
+  } */
 
   /* output styles */
 
